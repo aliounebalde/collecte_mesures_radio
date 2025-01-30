@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "date": "11-30-37",
+        "environment": "outdoor",
+        "network_type": "WiFi",
+        "device": "Raspberry Pi 4"
+    },
+    "measurements": [
+        {
+            "distance_m": 100.5,
+            "rssi_dBm": -60,
+            "throughput_Mbps": 10.2,
+            "latency_ms": 20.1,
+            "packet_loss": 0.01
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "measurements": [
+        {
+            "distance_m": 4226.01,
+            "rssi_dBm": -8,
+            "throughput_Mbps": 10,
+            "latency_ms": 57,
+            "packet_loss": 0.42
+        },
+        {
+            "distance_m": 1157.0,
+            "rssi_dBm": -39,
+            "throughput_Mbps": 10,
+            "latency_ms": 26,
+            "packet_loss": 0.11
+        },
+        {
+            "distance_m": 4600.45,
+            "rssi_dBm": -4,
+            "throughput_Mbps": 10,
+            "latency_ms": 61,
+            "packet_loss": 0.46
+        },
+        {
+            "distance_m": 1810.33,
+            "rssi_dBm": -32,
+            "throughput_Mbps": 10,
+            "latency_ms": 33,
+            "packet_loss": 0.18
+        },
+        {
+            "distance_m": 3986.79,
+            "rssi_dBm": -11,
+            "throughput_Mbps": 10,
+            "latency_ms": 54,
+            "packet_loss": 0.39
+        },
+        {
+            "distance_m": 5094.68,
+            "rssi_dBm": 0,
+            "throughput_Mbps": 10,
+            "latency_ms": 65,
+            "packet_loss": 0.5
+        }
+    ]
+}
