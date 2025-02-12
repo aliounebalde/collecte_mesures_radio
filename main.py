@@ -51,7 +51,7 @@ def main():
         # Ajouter la mesure à la liste
         measurements.append(wifi_metrics)
 
-        time.sleep(10)
+        time.sleep(config["collecte_interval_seconds"])
     data = {
     "metadata": {
         "start_date": current_time,

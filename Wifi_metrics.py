@@ -1,11 +1,13 @@
 import subprocess
 import re
+import logging
 
 class WifiMetricsCollector:
     """Classe pour collecter les métriques WiFi (RSSI, SNR, débit)."""
     def __init__(self,interface):
         self.interface = interface
-
+        logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+    
     def get_wifi_metrics(self):
         """Récupère le RSSI, le SNR et le débit de l'interface Wi-Fi."""
     
@@ -30,9 +32,9 @@ class WifiMetricsCollector:
                     if match_bitrate:
                         metrics["Débit"] = float(match_bitrate.group(1))
         except Exception as e:
-            print("Erreur lors de l'exécution de iw dev :", e)
-
-        # 2️⃣ Récupérer le SNR avec `/proc/net/wireless`
+            logging.error(f"Erreur lors de l'exécution de iw dev : {e}")
+        
+        # 2️ Récupérer le SNR avec `/proc/net/wireless`
         try:
             result = subprocess.run(["cat", "/proc/net/wireless"], capture_output=True, text=True)
             if result.returncode == 0:
@@ -43,6 +45,5 @@ class WifiMetricsCollector:
                         noise_level = float(values[3])  # Niveau de bruit en dBm
                         metrics["SNR"] = signal_level - noise_level  # Calcul du SNR
         except Exception as e:
-            print("Erreur lors de l'exécution de /proc/net/wireless :", e)
-
+            logging.error(f"Erreur lors de l'exécution de /proc/net/wireless : {e}")
         return metrics
