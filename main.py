@@ -21,7 +21,7 @@ start_lat, start_lon = 48.8566, 2.3522  # Exemple : Paris
 
 # Liste des positions testées
 positions = [
-    (48.8584, 2.2945),  # Tour Eiffel
+    (48.8584, 2.2945),
     (48.8606, 2.3376),   # Musée du Louvre
     (48.8738, 2.2950),    # Sacré-Cœur
     (48.8600, 2.3280),    # Notre-Dame de Paris
