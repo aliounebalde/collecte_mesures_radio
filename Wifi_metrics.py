@@ -1,7 +1,7 @@
 import subprocess
 import re
 
-class WifiMetrics:
+class WifiMetricsCollector:
     """Classe pour collecter les métriques WiFi (RSSI, SNR, débit)."""
     def __init__(self,interface):
         self.interface = interface
