@@ -2,5 +2,5 @@
     "interface" : "wlp0s20f3",
     "output_dir" : "results",
     "duration_seconds" : 300,
-    "collecte_interval_seconds" : 10
+    "collecte_interval_seconds" : 5
 }
