@@ -41,6 +41,26 @@ def read_gps_txt(file_path):
             }
             points.append(point)
     return points
+def read_gps_gpx(file_path):
+    """
+    Lit un fichier GPS au format .gpx et retourne une liste de points GPS.
+    :param file_path: Chemin du fichier .gpx.
+    :return: Liste de dictionnaires contenant latitude, longitude et timestamp.
+    """
+    points = []
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    namespace = {'gpx': 'http://www.topografix.com/GPX/1/0'}
+    for wpt in root.findall('.//gpx:wpt', namespace):
+        lat = float(wpt.attrib['lat'])
+        lon = float(wpt.attrib['lon'])
+        time = wpt.find('gpx:time', namespace).text
+        points.append({
+            "latitude": lat,
+            "longitude": lon,
+            "timestamp": time
+        })
+    return points
 
 def generate_json_output(points, ap_lat,ap_lon, output_file):
     """
@@ -72,8 +92,8 @@ def main(input_file):
 
     if input_file.endswith('.txt'):
         points = read_gps_txt(input_file)
-    # elif input_file.endswith('.gpx'):
-    #     points = read_gps_gpx(input_file)
+    elif input_file.endswith('.gpx'):
+        points = read_gps_gpx(input_file)
     else:
         raise ValueError("Format de fichier non supporté. Utilisez .txt ou .gpx.")
 

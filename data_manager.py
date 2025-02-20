@@ -16,6 +16,14 @@ class DataManager:
             logging.info(f"Données sauvegardées dans '{filename}'.")
         except Exception as e:
             logging.error(f"Erreur lors de la sauvegarde des données : {e}")
+    
+    def load_data(self,file_path):
+        """Charger un fichier json
+        :param file_path: chemin du fichier à charger.
+        :return: les données chargés
+        """
+        with open(file_path, 'r') as f:
+            return json.load(f)
 
     def create_output_dir(self):
         """creer le dossier de sauvegarde du jour s'il n'existe pas"""

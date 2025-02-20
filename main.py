@@ -28,7 +28,7 @@ def main():
     current_time = datetime.datetime.now().strftime("%H-%M-%S")
 
     # Créer un nom de fichier unique dans le dossier
-    filename = os.path.join(config["output_dir"], f"results_{current_time}.json")
+    filename = os.path.join(config["output_dir"], f"measurement_{current_time}.json")
     measurements = []
     #output_dir = f"results_{current_date}"
     start_time = time.time()
