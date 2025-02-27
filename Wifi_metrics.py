@@ -30,7 +30,7 @@ class WifiMetricsCollector:
                     # Cherche le débit
                     match_bitrate = re.search(r"rx bitrate:\s+([\d.]+)", line)
                     if match_bitrate:
-                        metrics["Débit"] = float(match_bitrate.group(1))
+                        metrics["Debit"] = float(match_bitrate.group(1))
         except Exception as e:
             logging.error(f"Erreur lors de l'exécution de iw dev : {e}")
         
@@ -41,9 +41,9 @@ class WifiMetricsCollector:
                 for line in result.stdout.split("\n"):
                     if self.interface in line:
                         values = line.split()
-                        signal_level = float(values[2])  # RSSI en dBm
+                        #signal_level = float(values[2])  # RSSI en dBm
                         noise_level = float(values[3])  # Niveau de bruit en dBm
-                        metrics["SNR"] = signal_level - noise_level  # Calcul du SNR
+                        metrics["SNR"] = metrics["RSSI"] - noise_level  # Calcul du SNR
         except Exception as e:
             logging.error(f"Erreur lors de l'exécution de /proc/net/wireless : {e}")
         return metrics

@@ -51,10 +51,10 @@ def read_gps_gpx(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
     namespace = {'gpx': 'http://www.topografix.com/GPX/1/0'}
-    for wpt in root.findall('.//gpx:wpt', namespace):
-        lat = float(wpt.attrib['lat'])
-        lon = float(wpt.attrib['lon'])
-        time = wpt.find('gpx:time', namespace).text
+    for trkpt in root.findall('.//gpx:trkpt', namespace):
+        lat = float(trkpt.attrib['lat'])
+        lon = float(trkpt.attrib['lon'])
+        time = trkpt.find('gpx:time', namespace).text
         points.append({
             "latitude": lat,
             "longitude": lon,
@@ -105,7 +105,7 @@ def main(input_file):
     config = M.load_config()
     
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
-    output_file = os.path.join(config["output_dir"],f'distance_{current_date}.json')
+    output_file = os.path.join(f'{config["output_dir"]}/distances',f'distance_{current_date}.json')
     # Générer le fichier JSON
     generate_json_output(points, ap_lat, ap_lon, output_file)
     print(f"Fichier JSON généré avec succès : {output_file}")

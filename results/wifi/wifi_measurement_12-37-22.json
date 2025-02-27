@@ -1,0 +1,108 @@
+{
+    "metadata": {
+        "start_date": "12-37-22",
+        "environment": "indoor",
+        "network_type": "WiFi",
+        "device": "Raspberry Pi 4"
+    },
+    "measurements": [
+        {
+            "RSSI": -45,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:22Z"
+        },
+        {
+            "RSSI": -46,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:27Z"
+        },
+        {
+            "RSSI": -49,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:32Z"
+        },
+        {
+            "RSSI": -53,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:37Z"
+        },
+        {
+            "RSSI": -47,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:42Z"
+        },
+        {
+            "RSSI": -52,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:47Z"
+        },
+        {
+            "RSSI": -54,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:52Z"
+        },
+        {
+            "RSSI": -60,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:37:57Z"
+        },
+        {
+            "RSSI": -63,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:38:02Z"
+        },
+        {
+            "RSSI": -61,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 72.2,
+            "timestamp": "2025-02-25T12:38:07Z"
+        },
+        {
+            "RSSI": -63,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 1.0,
+            "timestamp": "2025-02-25T12:38:12Z"
+        },
+        {
+            "RSSI": -69,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 52.0,
+            "timestamp": "2025-02-25T12:38:17Z"
+        },
+        {
+            "RSSI": -78,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 52.0,
+            "timestamp": "2025-02-25T12:38:22Z"
+        },
+        {
+            "RSSI": -76,
+            "SNR": 110.0,
+            "Debit": null,
+            "D\u00e9bit": 52.0,
+            "timestamp": "2025-02-25T12:38:27Z"
+        }
+    ]
+}

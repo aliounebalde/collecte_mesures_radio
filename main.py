@@ -14,7 +14,7 @@ def load_config():
     except Exception as e:
         print(f"Erreur lors du chargement de la configuration : {e}")
 
-def main():
+def main(environment_type="outdoor"):
     config = load_config()
     wifi_collector = WifiMetricsCollector(config["interface"])
     data_manager = DataManager(config["output_dir"])
@@ -28,14 +28,17 @@ def main():
     current_time = datetime.datetime.now().strftime("%H-%M-%S")
 
     # Créer un nom de fichier unique dans le dossier
-    filename = os.path.join(config["output_dir"], f"wifi_measurement_{current_time}.json")
+    filename = os.path.join(f'{config["output_dir"]}/wifi', f"wifi_measurement_{current_time}.json")
     measurements = []
     #output_dir = f"results_{current_date}"
     start_time = time.time()
     while(time.time() - start_time < config["duration_seconds"]):
         
         wifi_metrics = wifi_collector.get_wifi_metrics()
-
+        
+        if (environment_type =="indoor"):
+            print("Allez au prochain point")
+        
         wifi_metrics["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
         
         # Ajouter la mesure à la liste
@@ -45,7 +48,7 @@ def main():
     data = {
     "metadata": {
         "start_date": current_time,
-        "environment": "outdoor",
+        "environment": environment_type,
         "network_type": "WiFi",
         "device": "Raspberry Pi 4"
     },
@@ -54,4 +57,9 @@ def main():
     data_manager.save_data(data,filename)
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <environment_type>")
+    else:
+        main(sys.argv[1])
+    

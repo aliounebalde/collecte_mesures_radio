@@ -1,6 +1,6 @@
 {
-    "interface" : "wlp0s20f3",
+    "interface" : "wlxc04a002b2e08",
     "output_dir" : "results",
-    "duration_seconds" : 300,
-    "collecte_interval_seconds" : 5
+    "duration_seconds" : 180,
+    "collecte_interval_seconds" : 2
 }

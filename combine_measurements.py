@@ -48,11 +48,11 @@ def combine_measurements(wifi_file, distance_file):
     # Sauvegarder le nouveau fichier
 
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
-    output_file = os.path.join(config["output_dir"],f'results_{current_date}.json')
+    output_file = os.path.join(f'{config["output_dir"]}/final',f'results_{current_date}.json')
     
     data_manager.save_data(combined_data,output_file)
 
     print(f"Fichier JSON combiné sauvegardé sous : {output_file}")
     
 if __name__ == '__main__':
-    combine_measurements("results/results_00-01-36.json","results/distance_2025-02-20.json")
+    combine_measurements("results/wifi_measurement_14-55-00.json","results/distance_2025-02-26.json")
