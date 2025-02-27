@@ -4,7 +4,7 @@ import numpy as np
 from collections import defaultdict
 
 # Charger le fichier JSON
-with open("results/final/results_2025-02-26.json", "r") as file:
+with open("results/final/simulation_wifi_realiste.json", "r") as file:
     data = json.load(file)
 
 # Stocker les valeurs par distance

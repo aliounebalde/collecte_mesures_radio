@@ -1,0 +1,185 @@
+{
+    "metadata": {
+        "start_date": "2025-02-27",
+        "environment": "outdoor",
+        "network_type": "WiFi",
+        "device": "Raspberry Pi 4"
+    },
+    "measurements": [
+        {
+            "RSSI": -64.8,
+            "SNR": 0.0,
+            "Debit": 63.6,
+            "timestamp": "2025-02-27T12:10:00Z",
+            "distance_m": 5.0
+        },
+        {
+            "RSSI": -75.9,
+            "SNR": 0.0,
+            "Debit": 43.6,
+            "timestamp": "2025-02-27T12:11:00Z",
+            "distance_m": 8.96
+        },
+        {
+            "RSSI": -83.9,
+            "SNR": 0.0,
+            "Debit": 29.1,
+            "timestamp": "2025-02-27T12:12:00Z",
+            "distance_m": 12.92
+        },
+        {
+            "RSSI": -80.2,
+            "SNR": 0.0,
+            "Debit": 35.7,
+            "timestamp": "2025-02-27T12:13:00Z",
+            "distance_m": 16.88
+        },
+        {
+            "RSSI": -85.9,
+            "SNR": 0.0,
+            "Debit": 25.4,
+            "timestamp": "2025-02-27T12:14:00Z",
+            "distance_m": 20.83
+        },
+        {
+            "RSSI": -89.5,
+            "SNR": 0.0,
+            "Debit": 18.9,
+            "timestamp": "2025-02-27T12:15:00Z",
+            "distance_m": 24.79
+        },
+        {
+            "RSSI": -83.1,
+            "SNR": 0.0,
+            "Debit": 30.5,
+            "timestamp": "2025-02-27T12:16:00Z",
+            "distance_m": 28.75
+        },
+        {
+            "RSSI": -92.6,
+            "SNR": 0.0,
+            "Debit": 13.4,
+            "timestamp": "2025-02-27T12:17:00Z",
+            "distance_m": 32.71
+        },
+        {
+            "RSSI": -95.5,
+            "SNR": 0.0,
+            "Debit": 8.2,
+            "timestamp": "2025-02-27T12:18:00Z",
+            "distance_m": 36.67
+        },
+        {
+            "RSSI": -96.5,
+            "SNR": 0.0,
+            "Debit": 6.3,
+            "timestamp": "2025-02-27T12:19:00Z",
+            "distance_m": 40.62
+        },
+        {
+            "RSSI": -102.9,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:20:00Z",
+            "distance_m": 44.58
+        },
+        {
+            "RSSI": -101.2,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:21:00Z",
+            "distance_m": 48.54
+        },
+        {
+            "RSSI": -97.9,
+            "SNR": 0.0,
+            "Debit": 3.8,
+            "timestamp": "2025-02-27T12:22:00Z",
+            "distance_m": 52.5
+        },
+        {
+            "RSSI": -103.8,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:23:00Z",
+            "distance_m": 56.46
+        },
+        {
+            "RSSI": -104.1,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:24:00Z",
+            "distance_m": 60.42
+        },
+        {
+            "RSSI": -100.2,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:25:00Z",
+            "distance_m": 64.38
+        },
+        {
+            "RSSI": -108.4,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:26:00Z",
+            "distance_m": 68.33
+        },
+        {
+            "RSSI": -107.3,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:27:00Z",
+            "distance_m": 72.29
+        },
+        {
+            "RSSI": -102.4,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:28:00Z",
+            "distance_m": 76.25
+        },
+        {
+            "RSSI": -108.0,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:29:00Z",
+            "distance_m": 80.21
+        },
+        {
+            "RSSI": -111.2,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:30:00Z",
+            "distance_m": 84.17
+        },
+        {
+            "RSSI": -106.4,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:31:00Z",
+            "distance_m": 88.12
+        },
+        {
+            "RSSI": -106.0,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:32:00Z",
+            "distance_m": 92.08
+        },
+        {
+            "RSSI": -111.3,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:33:00Z",
+            "distance_m": 96.04
+        },
+        {
+            "RSSI": -108.7,
+            "SNR": 0.0,
+            "Debit": 1.0,
+            "timestamp": "2025-02-27T12:34:00Z",
+            "distance_m": 100.0
+        }
+    ]
+}
