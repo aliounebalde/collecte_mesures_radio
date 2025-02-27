@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 
 # Charger le fichier JSON
-with open("results/results_2025-02-26.json", "r") as file:
+with open("results/final/results_2025-02-26.json", "r") as file:
     data = json.load(file)
 
 # Extraire les données
