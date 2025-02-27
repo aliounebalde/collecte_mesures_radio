@@ -79,7 +79,9 @@ Clonez ce dépôt sur votre machine locale :
     ```
 
 ---
+
 ## Structures du projet
+
 📁 collecte_mesures_radio
 │── 📄 main.py        # Script pour collecter les mesures
 │── 📄 plot_moy2.py           # Script d'analyse et de visualisation
@@ -92,6 +94,7 @@ Clonez ce dépôt sur votre machine locale :
 &nbsp;&nbsp;&nbsp;&nbsp;│── 📁 final          # dossier de fichiers JSON contenant les resultats final
 │── 📄 config.json             # fichier de configuration du projet
 │── 📄 README.md              # Documentation du projet
+
 ---
 ## Résultat attendu
 
