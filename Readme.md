@@ -79,7 +79,20 @@ Clonez ce dépôt sur votre machine locale :
     ```
 
 ---
-
+## Structures du projet
+📁 collecte_mesures_radio
+│── 📄 main.py        # Script pour collecter les mesures
+│── 📄 plot_moy2.py           # Script d'analyse et de visualisation
+│── 📄 gps_processor.py          # Script de calcul de distance en fonction des données gps
+│── 📄 combine_measurements.py           # Script combinant distance ,mesures en fonction de timestamp
+│── 📁 gps_data         #  contient les données gps recueillis à partir de GPS logger
+│── 📁 results         #  contient tous les resultats de notre projets
+&nbsp;&nbsp;&nbsp;&nbsp;│── 📁 wifi          # dossier de fichiers JSON contenant les mesures collectées
+&nbsp;&nbsp;&nbsp;&nbsp;|── 📁 distances          # dossier de fichiers JSON contenant les distances
+&nbsp;&nbsp;&nbsp;&nbsp;│── 📁 final          # dossier de fichiers JSON contenant les resultats final
+│── 📄 config.json             # fichier de configuration du projet
+│── 📄 README.md              # Documentation du projet
+---
 ## Résultat attendu
 
 - Un dossier results sera créé (s'il n'existe pas déjà).
@@ -95,5 +108,6 @@ Clonez ce dépôt sur votre machine locale :
 # Auteurs
 
 **Alioune BALDE** https://github.com/aliounebalde/
+**Mohamed Bouhlassi**
 
 
