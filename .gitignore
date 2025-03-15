@@ -4,6 +4,7 @@ main.m
 moindre_carre.m
 results_2025-02-12
 results_2025-01-30
+venv/
 mon_env/*
 moindres_carrees3.py
 moindres_carrees2.py
