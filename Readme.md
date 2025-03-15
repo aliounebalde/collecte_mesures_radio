@@ -1,6 +1,6 @@
 # Collecte automatisés de mesures Radio
-Ceci est un projet qui consiste à automatiser la collecte automatique de mesures radio. Les tests seront effectués sur les technologies WIFI IEE 802.11 et/ ou LTE. En effet, nous voulons dans une périmètre géographique relevés des mesures tels que le niveau de puissance reçue, le débit, le taux de SNR, même la latence en fonction de la distance, de l'environnement (outdoor, indoor). La finalité sera qu'à la fin qu'on puisse faire des études de performances en fonction de ses résultats.
----
+
+## Ceci est un projet qui consiste à automatiser la collecte automatique de mesures radio. Les tests seront effectués sur les technologies WIFI IEE 802.11 et/ ou LTE. En effet, nous voulons dans une périmètre géographique relevés des mesures tels que le niveau de puissance reçue, le débit, le taux de SNR, même la latence en fonction de la distance, de l'environnement (outdoor, indoor). La finalité sera qu'à la fin qu'on puisse faire des études de performances en fonction de ses résultats.
 
 ## Table des matières
 
@@ -14,11 +14,12 @@ Ceci est un projet qui consiste à automatiser la collecte automatique de mesure
 8. [Combinaison des fichiers JSON](#combinaison-des-fichiers-json)
 9. [Tests](#tests)
 
---- 
+---
 
 ## Objectif du projet
 
 L'objectif de ce projet est de :
+
 - Collecter des données WiFi (RSSI, SNR, débit) à intervalles réguliers.
 - Collecter des données GPS (latitude, longitude, timestamp) en même temps.
 - Calculer la distance entre chaque point GPS et le point d'accès (AP).
@@ -51,52 +52,57 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 ## Installation
 
 Clonez ce dépôt sur votre machine locale :
-   ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
-   cd votre-projet
-   ```
 
---- 
+```bash
+git clone https://github.com/aliounebalde/collecte_mesures_radio
+cd collecte_mesures_radio
+```
+
+---
 
 ## Utilisation
 
 1. Pour lancer la collecte, exécutez le script main.py
 
-    ```bash
-    python main.py
-    ```
-2. Pour calculer la distance en fonction des coordonnées GPS 
+   ```bash
+   python main.py
+   ```
 
-    Nous utilisons une application mobile (**Gps Logger**) pour collecter les coordonnées Lat, Lon et générer ainsi un fichier .txt et/ou .gpx que nous utiliserons pour estimer la distance à partir de la formule de Haversine
+2. Pour calculer la distance en fonction des coordonnées GPS
 
-    ```bash
-    python gps_processor.py <input_file>
-    ```
-3. Combinaison 
-    
-    ```bash
-    python combine_measurements.py wifi_measurements.json gps_distances.json
-    ```
+   Nous utilisons une application mobile (**Gps Logger**) pour collecter les coordonnées Lat, Lon et générer ainsi un fichier .txt et/ou .gpx que nous utiliserons pour estimer la distance à partir de la formule de Haversine
+
+   ```bash
+   python gps_processor.py <input_file>
+   ```
+
+3. Combinaison
+
+   ```bash
+   python combine_measurements.py wifi_measurements.json gps_distances.json
+   ```
 
 ---
 
 ## Structures du projet
+
 ```md
 📁 collecte_mesures_radio  
-│── 📄 main.py               # Script pour collecter les mesures  
-│── 📄 plot_moy2.py          # Script d'analyse et de visualisation  
-│── 📄 gps_processor.py      # Script de calcul de distance en fonction des données GPS  
-│── 📄 combine_measurements.py  # Script combinant distance et mesures en fonction du timestamp  
-│── 📁 gps_data              # Contient les données GPS recueillies à partir de GPS Logger  
-│── 📁 results               # Contient tous les résultats de notre projet  
-│   ├── 📁 wifi              # Dossier de fichiers JSON contenant les mesures collectées  
-│   ├── 📁 distances         # Dossier de fichiers JSON contenant les distances  
-│   ├── 📁 final             # Dossier de fichiers JSON contenant les résultats finaux  
-│── 📄 config.json           # Fichier de configuration du projet  
-│── 📄 README.md             # Documentation du projet  
+│── 📄 main.py # Script pour collecter les mesures  
+│── 📄 plot_moy2.py # Script d'analyse et de visualisation  
+│── 📄 gps_processor.py # Script de calcul de distance en fonction des données GPS  
+│── 📄 combine_measurements.py # Script combinant distance et mesures en fonction du timestamp  
+│── 📁 gps_data # Contient les données GPS recueillies à partir de GPS Logger  
+│── 📁 results # Contient tous les résultats de notre projet  
+│ ├── 📁 wifi # Dossier de fichiers JSON contenant les mesures collectées  
+│ ├── 📁 distances # Dossier de fichiers JSON contenant les distances  
+│ ├── 📁 final # Dossier de fichiers JSON contenant les résultats finaux  
+│── 📄 config.json # Fichier de configuration du projet  
+│── 📄 README.md # Documentation du projet
 ```
 
 ---
+
 ## Résultat attendu
 
 - Un dossier results sera créé (s'il n'existe pas déjà).
@@ -113,5 +119,3 @@ Clonez ce dépôt sur votre machine locale :
 
 **Alioune BALDE** https://github.com/aliounebalde/
 **Mohamed Bouhlassi**
-
-
